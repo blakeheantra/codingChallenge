@@ -25,3 +25,8 @@ div.price {
 div.container {
     position: relative;
 }
+
+.team-block:hover {
+    background-color: black;
+    overflow: hidden;
+}
