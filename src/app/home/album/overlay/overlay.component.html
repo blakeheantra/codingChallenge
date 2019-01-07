@@ -1,0 +1,14 @@
+<div class="carousel-container">
+  <carousel>
+    <div id='overlay-close'>
+      <p>&times;</p>
+    </div>
+    <slide *ngFor="let image of images">
+      <div class="text-center py-5 bg-dark text-white">
+        <div class="lead">
+          <img [src]="image" alt="">
+        </div>
+      </div>
+    </slide>
+  </carousel>
+</div>

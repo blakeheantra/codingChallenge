@@ -1,0 +1,17 @@
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 container">
+  <!-- team-img -->
+  <div class="team-block" (click)="onClickItem.emit(item)">
+    <div class="title">{{ item.name | furnitureNameStrip}}</div>
+    <div class="price">{{ item.priceRange.regular.low | currency }}</div>
+    <div class="team-img">
+      <!-- <img src="https://easetemplate.com/free-website-templates/motion/images/team_member_1.jpg" alt=""> -->
+      <img [src]="item.thumbnail.href" [alt]="item.name">
+      
+      <div class="overlay">
+        <div class="text">
+          <p class="mb30 team-meta"> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

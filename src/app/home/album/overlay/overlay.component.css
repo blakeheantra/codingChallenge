@@ -1,0 +1,25 @@
+#overlay-close p{
+    margin: 0;
+    position: relative;
+    top: 1vw;
+    z-index: 2;
+    padding: 0 2vw;
+    font-size: 5vw;
+    text-align: right;
+    cursor: pointer;
+}
+
+div.carousel-container {
+    border: 50vw solid rgba(0, 0, 0, 0.5);
+    background: white;
+    background-clip: padding-box;
+}
+
+img {
+    padding: 10px 10px;
+}
+
+span {
+    /* border-radius: 50% 50%;
+    border: black solid; */
+}

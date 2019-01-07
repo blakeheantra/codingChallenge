@@ -1,0 +1,24 @@
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="content">
+  <div class="container">
+    <!-- <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb40 text-center">
+
+        <h1>Director List</h1>
+
+      </div>
+    </div> -->
+    <div class="row" class="overlay-container">
+      <app-overlay id="Overlay" style="display: none" 
+                  [images]="selectedItemImages"></app-overlay>
+    </div>
+    <div class="row" >
+      <app-item *ngFor="let item of items" 
+              [item]="item" 
+              (onClickItem)="showOverlay($event)"></app-item>
+    </div>
+
+  </div>
+</div>
+
