@@ -3,10 +3,12 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
 
 ## How to run
-* Step1: Run `npm install` in terminal
+* Step1: Run `npm install` in terminal.
 * Step2: Run `npm start` in terminal. 
-* Step3: Navigate to `http://localhost:4200/`. 
+* Step3: Navigate to `http://localhost:8080/`. 
 
+## run SEO tests
+Run `curl http://localhost:8080/`.
 
 ## Running unit tests
 
