@@ -1,3 +1,6 @@
+import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { CommonModule } from '@angular/common';
+import { TransferHttpCacheModule } from '@nguniversal/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -22,13 +25,18 @@ import { FurnitureNameStripPipe } from './furniture-name-strip.pipe';
     OverlayComponent,
     FurnitureNameStripPipe
   ],
-  imports: [
-    BrowserModule,
+  imports:[
+ CommonModule,
+NgtUniversalModule,
+ 
+ TransferHttpCacheModule,
+HttpClientModule,
+ 
+    
     AppRoutingModule,
     HttpClientModule,
     CarouselModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }

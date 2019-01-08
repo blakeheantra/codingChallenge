@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
-import { group } from 'src/app/group';
+import { group } from '../../../group';
 
 @Component({
   selector: 'app-item',
@@ -11,8 +11,8 @@ export class ItemComponent implements OnInit {
   @Output() onClickItem = new EventEmitter();
 
   constructor() {
-    
-   }
+  
+  }
 
   ngOnInit() {
   }
